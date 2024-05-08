@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 3rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #5e3719;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.heading-title {
+    background-size: cover !important;
+    background-position: cover !important;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-title h1 {
+    padding-top: 5rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: #5e3719;
+    background: #dfd090;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #13131a;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #13131a;
+}
+
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #13131a;
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 55rem;
+    text-align: center;
+}
+
+.home .content h3 {
+    color: #fff;
+    font-size: 6rem;
+    line-height: 1.2;
+    letter-spacing: .5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.home-menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.home-menu .box-container .box {
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.home-menu .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-menu .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.home-menu .box-container .box .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.home-menu .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #13131a;
+}
+
+.home-menu .box-container .box .content .price {
+    color: #5e3719;
+    font-size: 2.5rem;
+}
+
+
+/* end */
+
+
+/* about */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about .image {
+    flex: 1 1 41rem;
+}
+
+.about .image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about .content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about .content h3 {
+    font-size: 3rem;
+    color: #13131a;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+/* end */
+
+
+/* category */
+
+.category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.category .box-container .box {
+    text-align: center;
+}
+
+.category .box-container .box img {
+    height: 16rem;
+}
+
+.category .box-container .box h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.booking .book-form {
+    padding: 2rem;
+    background: #eee;
+}
+
+.booking .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox {
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: #13131a;
+    border-radius: .5rem;
+    text-transform: none;
+    margin-top: 1.5rem;
+}
+
+.booking .book-form .flex .inputBox span {
+    font-size: 1.5rem;
+    color: #13131a;
+}
+
+.booking .book-form .btn {
+    margin-top: 2rem;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

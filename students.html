@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Steak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">  steak</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="video.html">video</a>
+            <a href="students.html">Students</a>
+            <a href="booking.html">booking</a>
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+    <section class="Students" id="Students" style="margin-top: 60px;">
+
+        <h1 class="heading">Students Group</h1>
+        <div class="Students" style="font-size: medium;">
+
+            <ul id="Students-list" style="text-align: center; ">
+                <li>رغد سعيد الزهراني</li>
+                <li>جوري سعيد العنزي</li>
+            </ul>
+        </div>
+
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const membersList = document.getElementById('Students-list');
+
+            function Reorder_randomly() {
+                for (let i = membersList.children.length; i >= 0; i--) {
+                    membersList.appendChild(membersList.children[Math.random() * i | 0]);
+                }
+            }
+
+            Reorder_randomly();
+
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

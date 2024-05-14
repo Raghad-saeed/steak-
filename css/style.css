@@ -44,7 +44,7 @@ section {
     color: #fff;
 }
 
-.btn {
+.btn .active{
     display: inline-block;
     margin-top: 1rem;
     padding: 1rem 4rem;
